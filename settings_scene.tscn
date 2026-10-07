@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d25lm8j6ntndt"]
+
+[ext_resource type="Script" uid="uid://0uxhn4poi2kg" path="res://settings_scene.gd" id="1_n6qfs"]
+
+[node name="Node2D" type="Node2D" unique_id=1044618856]
+script = ExtResource("1_n6qfs")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1078017030]
+offset_right = 291.0
+offset_bottom = 248.0
+theme_override_font_sizes/normal_font_size = 60
+text = " settings"
+
+[node name="Button" type="Button" parent="." unique_id=1657559122]
+offset_left = 1008.0
+offset_top = 573.0
+offset_right = 1161.0
+offset_bottom = 643.0
+theme_override_font_sizes/font_size = 30
+text = "goog bags"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
