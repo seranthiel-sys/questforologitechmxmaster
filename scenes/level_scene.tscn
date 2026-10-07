@@ -1,39 +1,15 @@
-[gd_scene format=3 uid="uid://c7ia8smtwl65m"]
+[gd_scene format=3 uid="uid://gko0sflsos1q"]
 
 [ext_resource type="Script" uid="uid://6dwk615mio48" path="res://level_scene/level_scene.gd" id="1_sq5n0"]
 [ext_resource type="Texture2D" uid="uid://be1geofb2y4kn" path="res://addons/an-orange-kitten-sitting-on-a-blanket-photo.jpeg" id="2_qajyd"]
-[ext_resource type="PackedScene" uid="uid://bedsk623os45d" path="res://scenes/character_body_2d.tscn" id="3_wjnok"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qajyd"]
-size = Vector2(1178, 133)
 
 [node name="Node2D" type="Node2D" unique_id=864606344]
 script = ExtResource("1_sq5n0")
 
-[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1839164189]
-scroll_offset = Vector2(-989, -10)
-repeat_size = Vector2(1000, 0)
-autoscroll = Vector2(100, 0)
-
-[node name="Background" type="TextureRect" parent="Parallax2D" unique_id=1302212031]
-offset_right = 1186.0
-offset_bottom = 669.0
+[node name="Background" type="TextureRect" parent="." unique_id=1382066419]
+offset_right = 1152.0
+offset_bottom = 677.0
 texture = ExtResource("2_qajyd")
-metadata/_edit_use_anchors_ = true
-
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1263690382]
-position = Vector2(-3, 576)
-
-[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=598208452]
-offset_left = 11.0
-offset_top = -57.0
-offset_right = 1177.0
-offset_bottom = 66.0
-metadata/_edit_use_anchors_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=301437725]
-position = Vector2(584, 7)
-shape = SubResource("RectangleShape2D_qajyd")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1138249339]
 offset_right = 647.0
@@ -88,8 +64,5 @@ offset_bottom = 665.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 50
 text = "0.0"
-
-[node name="CharacterBody2D" parent="." unique_id=584870674 instance=ExtResource("3_wjnok")]
-position = Vector2(543, 320)
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

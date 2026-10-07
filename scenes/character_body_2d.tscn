@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bedsk623os45d"]
+
+[ext_resource type="Script" uid="uid://qyhlbc17kv3s" path="res://character_body_2d.gd" id="1_g2brh"]
+[ext_resource type="Texture2D" uid="uid://be1geofb2y4kn" path="res://addons/an-orange-kitten-sitting-on-a-blanket-photo.jpeg" id="2_dn4c7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ai1h0"]
+radius = 94.02127
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=584870674]
+script = ExtResource("1_g2brh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1345566125]
+position = Vector2(2, 1)
+scale = Vector2(0.2532, 0.41714287)
+texture = ExtResource("2_dn4c7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=855121988]
+shape = SubResource("CircleShape2D_ai1h0")
