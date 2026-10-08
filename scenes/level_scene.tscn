@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://gko0sflsos1q"]
+[gd_scene format=3 uid="uid://7jfhd6qawrx8"]
 
 [ext_resource type="Script" uid="uid://6dwk615mio48" path="res://level_scene/level_scene.gd" id="1_sq5n0"]
 [ext_resource type="Texture2D" uid="uid://be1geofb2y4kn" path="res://addons/an-orange-kitten-sitting-on-a-blanket-photo.jpeg" id="2_qajyd"]
